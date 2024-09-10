@@ -1,0 +1,176 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A6A6A6;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    height: 15vh;
+}
+
+#nombrePagina {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A6A6A6;
+    /* min-width: 120px; */
+    width: 12.5vw;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    padding: 2vh 3vh;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    width: 100%;
+    padding: 2.5vw;
+    text-decoration: none;
+    color: #303030;
+    border-radius: 2.75vh;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+    background-color: #7c7575;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .tienda {
+    background-color: #7c7575;
+} */
+
+nav ul {
+    list-style-type: none;
+    margin-right: 2vh;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 2.25vh;
+}
+
+nav a {
+    color: #A6A6A6;
+    font-size: 1.8vh;
+    text-decoration: none;
+}
+
+/* nav a:hover {
+    color: #00B7D6;
+    text-decoration: underline;
+} */
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+main {
+    /* background: rgb(182,244,255);
+    background: linear-gradient(90deg, rgba(182,244,255,1) 0%, rgba(255,255,255,1) 50%, rgba(182,244,255,1) 100%); */
+    background: rgb(203, 247, 255);
+    background: linear-gradient(90deg, rgba(203, 247, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(203, 247, 255, 1) 100%);
+}
+
+/* section {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.2fr 0.6fr 0.2fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    height: 90vh;
+    width: 100vw;
+    padding-bottom: 5rem;
+    grid-template-areas:
+        "columna1 algoritmo algoritmo algoritmo columna2"
+        "columna1 imagenCubo1 imagenCubo2 imagenCubo3 columna2"
+        "columna1 nombreCubo1 botonMezcla nombreCubo3 columna2"
+        "columna1 precioCubo1 precioCubo2 precioCubo3 columna2"
+        /* "espacioBlanco espacioBlanco espacioBlanco espacioBlanco espacioBlanco"; */
+
+section {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 78vh;
+    width: 100vw;
+    grid-template-areas:
+      "columna1 titulo titulo columna2"
+      "columna1 texto1 texto1 columna2"
+      "columna1 texto2 imagenLogo columna2";
+  }
+  
+  /* .titulo { grid-area: titulo; } */
+
+.titulo {
+    grid-area: titulo;
+    font-size: 8.5vh;
+    text-align: center;
+    color: #303030;
+    padding-top: 3.5vh;
+}
+
+  .texto1 { grid-area: texto1; color:#303030; font-size: 3.5vh; text-align: justify; }
+  
+  .texto2 { grid-area: texto2; color:#303030; font-size: 2.5vh; text-align: justify; padding-top: 1.25vh;}
+  
+  #nh { color:#303030; font-size: 3vh; font-weight: bold; }
+
+  .imagenLogo { grid-area: imagenLogo; padding-left: 2vw; padding-bottom: 3vh; text-align: center; align-items: center;}
+  
+  #textoImg { color:#303030; font-size: 3.25vh; }
+
+  .columna1 { grid-area: columna1; }
+  
+  .columna2 { grid-area: columna2; }
+
+
+/* .columna1 {
+    grid-area: columna1;
+}
+
+.columna2 {
+    grid-area: columna2;
+} */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: #A6A6A6;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 1.65vh;
+    font-weight: bold;
+    height: 7vh;
+}
